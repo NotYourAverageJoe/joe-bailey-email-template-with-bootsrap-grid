@@ -12,17 +12,16 @@
     
     <style>
 
-      body{
-        margin: 30px;
-      }
-   .main-container{
-display: flex;
-
-   }
-#card-image{
+  body{
+  margin: 30px;
+}
+  .main-container{
+  display: flex;
+}
+  #card-image{
 margin: 15px;
 }
-#btn-compose{
+  #btn-compose{
     display: flex;
     justify-content: center;
    
@@ -35,8 +34,8 @@ margin: 15px;
     </style>
     <div class="container-fluid main-container">    
         <div class="row first-row" style="width: 100%" >
-            <div class="col-lg-3 col-md-2 col-sm-2 bg-dark text-light" style="max-width: 441px;" id="left-col">
-            <p class="greet">
+            <div class="col-lg-2 col-md-2 col-sm-1  bg-dark text-light" style="max-width: 441px;" id="left-col">
+            <p class="greet"></p>
                 <svg xmlns="http://www.w3.org/2000/svg " id="card-image" width="2em" height="3em" border-radius="15px" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
                     <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
                     <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z"/>
@@ -46,34 +45,36 @@ margin: 15px;
                     <br>
                     <br>
                     <ul style="list-style: none;">
-                        <li><strong>Inbox (1)</strong></li><br>
+                        <li><strong>Inbox</strong>
+                          (1)</li><br>
                         <li>Tagged</li><br>
-                        <li>Important</li><br>
+                        <li>Important
+                        </li><br>
                         <li>Sent Mail</li><br>
                         <li>Drafts</li><br>
                         <li>Trash</li>
                     </ul>
-                </div><!----Closing Left Column Tag-->
+                </div>
                     
                 
 
 
-                <div class="col-lg-3 col-md-4 col-sm-4 bg-light "  id= "mid-col" >
+                <div class="col-lg-3 col-md-3 col-sm-4 bg-light "  id= "mid-col" >
                     <input type="text" class="form-control" style="margin-bottom: 1rem" placeholder="Search emails" ">
                     
                 <!---First email card-->
 
                     <div class="list-group ">
                         <a href="#" class="list-group-item list-group-item-action " >
-                          <div class="d-flex w-100">
+                          <div class="d-flex w-100 justify-content-between">
                             <h6 class="mb-1"><strong><br>LinkedIn</strong></h6>
-                            <small>02:45p.m.</small>
+                            <small class="time" style="padding: 1px">02:45p.m.</small>
                           </div>
                           <p class="mb-1">You have a new connection request.</p><br>
                         </a>
                           
                   <!---Second email card-->      
-                        <a href="#" class="list-group-item list-group-item-action">
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-light">
                           <div class="d-flex w-100 justify-content-between">
                             <h6 class="mb-1"><strong><br>Michael Scott Daily Quotes</strong></h6>
                             <small class="text-muted">Jul, 3 2020</small>
@@ -92,34 +93,38 @@ margin: 15px;
                           </a>
                       </div>
                     </div>   
+
+                    
                     
             <!---Read and Reply Column--->
                           
                     <div class="col-lg-6 col-md-6 col-sm-4 justify-content-center"  id =" las-col">
                         <small class="header-address">To:taylor@lamarsoftware.io <br> From: re-reply@theofficenbc.com<small>
+
+                            <!---Three Dot Icon-->
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" class="bi bi-three-dots float-right" viewBox="0 0 16 16">
+                              <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                            </svg>
+  
+                          <!---Reply Icon-->
+  
+  
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" class="bi bi-reply-fill float-right" viewBox="0 0 16 16">
+                              <path d="M5.921 11.9 1.353 8.62a.719.719 0 0 1 0-1.238L5.921 4.1A.716.716 0 0 1 7 4.719V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
+                            </svg>
+  
+                            <!----Trash Icon-->
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" class="bi bi-trash float-right" viewBox="0 0 16 16">
+                              <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                              <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                            </svg>
+  
                         <h1 class = "subject-header" style="margin: 1rem 0 3rem 0">Michael Scott Daily Quotes</h1>
                         
 
-                          <!---Three Dot Icon-->
-
-                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" class="bi bi-three-dots float-right" viewBox="0 0 16 16">
-                            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-                          </svg>
-
-                        <!---Reply Icon-->
-
-
-                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" class="bi bi-reply-fill float-right" viewBox="0 0 16 16">
-                            <path d="M5.921 11.9 1.353 8.62a.719.719 0 0 1 0-1.238L5.921 4.1A.716.716 0 0 1 7 4.719V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
-                          </svg>
-
-                          <!----Trash Icon-->
-                          
-                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" fill="currentColor" class="bi bi-trash float-right" viewBox="0 0 16 16">
-                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                            <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                          </svg>
-
+                        
                           <blockquote class="blockquote">
                             <p>"Friends joke with one another. 'Hey, you're poor.' 'Hey, your momma's dead.' That's what friends do."</p>
                     <p>"It's a good thing Russian doesnt exist anymore."</p>
@@ -133,26 +138,14 @@ margin: 15px;
             </blockquote>
 
                 <div class="form-outline" style="margin-top: 2rem;">
-                    <textarea class="form-control" id="textAreaExample2" rows="10"></textarea>
+                    <textarea class="form-control" id="textArea" rows="10"></textarea>
                     <button type="submit" class="btn btn-outline-warning float-right">Reply</button> 
                 </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-                        
-                        
-
-                    
-                    
-                  
-
-                    
-                            
-                 </div><!------Closing Container Tag-->
-            </div><!---Closing Row Tag-->    
-        </div><!---Closing First Column Tag-->
-    </div><!---Closing Middle Column Tag-->
-</div><!----Closing Last Column Tag--->
-    
-        
 </body>
 </html>
